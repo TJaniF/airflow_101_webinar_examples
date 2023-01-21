@@ -25,7 +25,7 @@ with DAG(
         return random_number
 
     @task()
-    def transform(extracted_val):
+    def transform(random_number):
         """Multiplies a number by 23."""
 
         transformed_val = extracted_val * 23
